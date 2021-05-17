@@ -1,0 +1,8 @@
+name = "MPOmodule"
+uuid = "fb992cd2-2238-486a-9b7f-0509ae0eaf01"
+authors = ["Raffael Gawatz <Raffael.Gawatz@nbi.ku.dk>"]
+version = "0.1.0"
+
+[deps]
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+TensorOperations = "6aa20fa7-93e2-5fca-9bc0-fbd0db3c71a2"
