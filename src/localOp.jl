@@ -9,14 +9,11 @@
     localOp
 
 Local Operator is a sparse operator structure only storing in and outgoing indices 
-and the coefficient associated with eacht in-out index pair:
+and the coefficient associated with each in-out index pair:
 
 σʸ = (1,2),(2,1) index pairs with coeffcients -1.0im and 1.0im
 
-
 To Do: !!! Essentially could be replaced by sparse array with coo indexing.
-
-
 """
 struct localOp{DT<:Number, D}
 	c::Vector{DT}
