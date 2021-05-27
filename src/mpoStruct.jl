@@ -135,7 +135,7 @@ function getMPOFromTensor(mpoTensor::Array{DT, 4}) where {DT<:Number}
 end
 
 #
-#	some MPO algebra
+#	some MPO arithmetic
 #
 import Base.(*)
 import Base.(+)
