@@ -395,20 +395,15 @@ function findParaCol(mpo::MPO{localOp{DT,D}}) where {DT<:Number, D}
 				T[k_idx][col_i] = scale
 				break
 			end
-
 		end
-
+						
 		if para != true
 			
 			push!(K, mpo_col)
 			a = zeros(ComplexF64, getBondDim(mpo)[2])
 			a[col_i] = 1.0
 			push!(T,a)
-
-
-
 		end
-
 	end
 
 
