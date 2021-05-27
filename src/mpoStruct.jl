@@ -7,7 +7,7 @@ struct MPO{DT<:Union{localOp, AbstractArray}}
 	Op_index::Vector{Int}
 	
 	function MPO(bDim::Union{Tuple{Int,Int}, Int}, Operator::Union{Vector{<:localOp}, Vector{<:AbstractArray}}, Op_index::Vector{Int})
-		allunique(Op_index) || throw(ArgumentError("operator indecies contains duplicate"))
+		allunique(Op_index) || throw(ArgumentError("operator indices contains duplicate"))
 		dim = typeof(bDim) == Int ? bDim*bDim : *(bDim...)
 		dim >= maximum(Op_index) || throw(ArgumentError("operator indices exceed MPO bond dimension"))
 
